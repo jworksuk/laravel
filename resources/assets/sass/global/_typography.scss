@@ -1,0 +1,151 @@
+/*
+FONT FAMILIES
+----------------------------------------------------------------------------- */
+
+%open-sans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*
+HEADINGS
+----------------------------------------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0 0 10px;
+    line-height: 1.4em;
+    font-weight: 700;
+    text-rendering: optimizelegibility;
+}
+
+// h1, h2, h3 {
+//     line-height: 40px;
+// }
+
+// h4, h5, h6 {
+//     line-height: 20px;
+// }
+
+h1{ font-size: $fontSizeAlpha; }
+h2{ font-size: $fontSizeBravo; }
+h3{ font-size: $fontSizeCharlie; }
+h4{ font-size: $fontSizeDelta; }
+h4{ font-size: $fontSizeEcho; }
+h6{ font-size: $fontSizeFoxtrot; }
+
+.section-title {
+    text-transform: uppercase;
+}
+
+.display-title {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: $fontSizeAlpha;
+}
+
+small{
+    font-size: 85%;
+}
+
+p{
+    margin: 0 0 $line-height;
+}
+
+img{
+    margin-bottom: $line-height;
+}
+
+
+
+blockquote{
+    @extend .clearfix;
+    border-left: 5px solid $grey;
+    padding: 0 0 0 15px;
+    margin-bottom: $line-height;
+
+    p{
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 1.25;
+        margin-bottom: 0;
+    }
+
+    small{
+        color: $grey;
+        display: block;
+        line-height: 20px;
+
+        &:before{
+            content: "— ";
+        }
+    }
+
+    cite{
+        font-style: normal;
+    }
+}
+
+table{
+    border: 1px solid $grey;
+    margin: 10px 0;
+    text-align: left;
+    width: 100%;
+
+    th{ font-weight: bold; }
+
+    tr td, th{
+        border: 1px solid #eee;
+        padding: 5px 20px;
+    }
+}
+
+ol{
+    padding: 0 0 0 25px;
+
+    li{
+        list-style: decimal outside;
+    }
+}
+
+ul{
+    padding: 0 0 0 25px;
+
+    li{ list-style: disc; }
+}
+
+li { margin: 5px 0 5px 10px; }
+
+sup{ bottom: 1ex; }
+sub{ top: 0.5ex; }
+
+sup, sub{
+    font-size: 0.8em;
+    height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+abbr, acronym{
+    border-bottom: 1px dotted #666;
+    cursor: help;
+}
+
+code, pre {
+    background-color: $lightgrey;
+    border: 1px solid $grey;
+    border-radius: 3px;
+    color: $black;
+    font-family: Inconsolata,monospace;
+    font-size: 12px;
+    padding: 0 3px;
+}
+
+pre {
+    padding: 5px 12px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+
+    code {
+        border: 0 none !important;
+        padding: 0;
+    }
+}

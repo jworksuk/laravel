@@ -1,0 +1,54 @@
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    font-size: $fontSizeDelta;
+    line-height: $line-height;
+    color: $black;
+    background-color: $white;
+    border: 1px solid $grey;
+    outline: none;
+    @include rounded-corners(3px);
+    margin: 0 0 $line-height 0;
+    @extend %open-sans;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+textarea {
+    height: auto;
+}
+
+select {
+    height: 32px;
+    line-height: 32px;
+}
+
+input[type="submit"],
+button {
+    height: 32px;
+    line-height: $line-height;
+    background: $lightgrey;
+    border: 0;
+    padding: 0 10px;
+    color: $black;
+    font-size: $fontSizeDelta;
+    border: 1px solid $grey;
+    @include rounded-corners(3px);
+    margin: 0 0 $line-height 0;
+    @extend %open-sans;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    outline: none;
+}
